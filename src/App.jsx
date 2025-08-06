@@ -6,7 +6,7 @@ import Operation from "./components/Operation.jsx";
 const App = () => {
 
     return (
-        <div>
+        <div className={'min-h-screen'}>
           <Balance/>
           <Operation />
         </div>
