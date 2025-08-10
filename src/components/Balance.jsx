@@ -8,7 +8,7 @@ const Balance = () => {
         <div className={'text-center text-uppercase'}>
             <h1 className={'text-[gold] font-bold text-8xl'}>Iron Bank of Braavos</h1>
             <h3 className={'text-[whitesmoke] py-6 text-5xl'}>{quote}</h3>
-            <h2 className={'text-[firebrick] py-12 text-7xl'}>Balance = {balance}</h2>
+            <h2 className={'text-[firebrick] py-6 text-7xl'}>Balance = {balance}</h2>
         </div>
     );
 };
