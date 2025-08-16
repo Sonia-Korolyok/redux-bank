@@ -1,11 +1,8 @@
-export const PUT_QUOTE = "PUT_QUOTE";
+import {putQuote} from "../quot/quoteSlice.js";
 
-export const putQuote = quote => ({
-    type: PUT_QUOTE,
-    payload: quote
-})
+
 export const fetchQuote = () => {
-    return (dispatch) => {
+    return dispatch => {
         dispatch(putQuote('Pending'));
         fetch("https://api.gameofthronesquotes.xyz/v1/random")
             .then(res => res.json())
